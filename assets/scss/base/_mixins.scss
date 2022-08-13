@@ -1,0 +1,46 @@
+$hd: 1900px;
+$large: 1600px;
+$medium: 1366px;
+$macbook: 1280px;
+$tablet: 992px;
+$phone: 576px;
+
+@mixin large {
+  @media screen and (max-width: $large) {
+    @content;
+  }
+}
+@mixin medium {
+  @media screen and (max-width: $medium) {
+    @content;
+  }
+}
+@mixin macbook {
+  @media screen and (max-width: $macbook) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
+@mixin for-web-only {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+@mixin for-xxl-only {
+  @media screen and (min-width: $large) {
+    @content;
+  }
+}
+
+// @include MIXIN {
+//   styles
+// }

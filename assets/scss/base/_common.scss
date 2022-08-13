@@ -1,0 +1,35 @@
+.bg-white {
+  background-color: #fff;
+}
+.bg-black {
+  background-color: #000;
+}
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #000;
+}
+.text-center {
+  text-align: center;
+}
+.bg-image {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.d-mobile {
+  @include for-web-only {
+    display: none !important;
+  }
+}
+.d-desktop {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.js-no-scroll {
+  overflow: hidden;
+}
